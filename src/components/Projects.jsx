@@ -1,0 +1,88 @@
+import React from "react";
+import { FaGithub } from "react-icons/fa";
+import heroImg from "../assets/logo.jpg";
+import { FiArrowUpRight } from "react-icons/fi";
+
+const Projects = () => {
+  return (
+    <main className="px-6 md:px-12 overflow-hidden">
+      {/* Section Heading */}
+      <div className="flex flex-col md:grid md:grid-cols-2 pb-8 gap-6">
+        <div>
+          <h1 className="text-2xl md:text-3xl uppercase font-bold">
+            featured projects
+          </h1>
+          <h4 className="text-gray-400">
+            Here are some of the selected projects that showcase my passion for
+            front-end development
+          </h4>
+        </div>
+      </div>
+
+      {/* Project Grid */}
+      <div className="flex flex-col md:grid md:grid-cols-2 gap-8 items-center">
+        {/* LEFT: Image card */}
+        <div className="flex flex-col gap-4 p-4 bg-[#1A1A1A] items-center rounded-xl w-full">
+          <div className="self-start">
+            <h1 className="bg-black px-3 py-1 rounded-full text-sm">
+              Challenge
+            </h1>
+          </div>
+          <div className="flex justify-center py-4">
+            <img
+              src={heroImg}
+              alt="project img"
+              className="w-full max-w-xs rounded-xl object-cover"
+            />
+          </div>
+        </div>
+
+        {/* RIGHT: Details */}
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-2">
+            <h1 className="text-xl md:text-2xl font-bold">
+              Promotional landing page for our favorite show
+            </h1>
+            <p className="text-[#C7C7C7] leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              explicabo, atque, voluptatem distinctio placeat tempora sunt
+              reiciendis, vero praesentium necessitatibus omnis! Officia
+              voluptatem quasi ducimus veritatis consequatur voluptate magni
+              natus? Labore modi cum corrupti illo?
+            </p>
+          </div>
+
+          <h3 className="border-b border-[#484848] uppercase pb-2">
+            project info
+          </h3>
+          <div className="text-[#C7C7C7] flex flex-row justify-between border-b border-[#484848] pb-2">
+            <span>Year</span>
+            <span>2023</span>
+          </div>
+          <div className="text-[#C7C7C7] flex flex-row justify-between border-b border-[#484848] pb-2">
+            <span>Role</span>
+            <span>Front-end Developer</span>
+          </div>
+
+          {/* Links */}
+          <div className="text-[#D3E97A] flex flex-row gap-6 mt-2">
+            <a
+              href=""
+              className="flex flex-row gap-1 items-center uppercase border-b hover:opacity-80 transition"
+            >
+              Live Demo <FiArrowUpRight />
+            </a>
+            <a
+              href=""
+              className="flex flex-row gap-1 items-center uppercase border-b hover:opacity-80 transition"
+            >
+              See on GitHub <FaGithub />
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default Projects;
