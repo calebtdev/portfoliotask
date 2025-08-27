@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import heroImg from "../assets/logo.jpg";
 import { FiArrowUpRight } from "react-icons/fi";
+import { projectData } from "../data/datarecord";
 
 const Projects = () => {
   return (
@@ -20,66 +21,64 @@ const Projects = () => {
       </div>
 
       {/* Project Grid */}
-      <div className="flex flex-col md:grid md:grid-cols-2 gap-8 items-center">
-        {/* LEFT: Image card */}
-        <div className="flex flex-col gap-4 p-4 bg-[#1A1A1A] items-center rounded-xl w-full">
-          <div className="self-start">
-            <h1 className="bg-black px-3 py-1 rounded-full text-sm">
-              Challenge
-            </h1>
-          </div>
-          <div className="flex justify-center py-4">
-            <img
-              src={heroImg}
-              alt="project img"
-              className="w-full max-w-xs rounded-xl object-cover"
-            />
-          </div>
-        </div>
+      <div className="flex flex-col gap-[5rem]">
+        {projectData.map((data, index) => (
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 items-center">
+            {/* LEFT: Image card */}
+            <div className="flex flex-col gap-4 p-4 bg-[#1A1A1A] items-center rounded-xl w-full">
+              <div className="self-start">
+                <h1 className="bg-black px-3 py-1 rounded-full text-sm">
+                  {data.type}
+                </h1>
+              </div>
+              <div className="flex justify-center py-4">
+                <img
+                  src={data.img}
+                  alt="project img"
+                  className="w-full max-w-[25rem] md:h-[20rem] rounded-xl object-center "
+                />
+              </div>
+            </div>
 
-        {/* RIGHT: Details */}
-        <div className="flex flex-col gap-4">
-          <div className="flex flex-col gap-2">
-            <h1 className="text-xl md:text-2xl font-bold">
-              Promotional landing page for our favorite show
-            </h1>
-            <p className="text-[#C7C7C7] leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              explicabo, atque, voluptatem distinctio placeat tempora sunt
-              reiciendis, vero praesentium necessitatibus omnis! Officia
-              voluptatem quasi ducimus veritatis consequatur voluptate magni
-              natus? Labore modi cum corrupti illo?
-            </p>
-          </div>
+            {/* RIGHT: Details */}
+            <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-2">
+                <h1 className="text-xl md:text-2xl font-bold">{data.title}</h1>
+                <p className="text-[#C7C7C7] leading-relaxed">{data.detail}</p>
+              </div>
 
-          <h3 className="border-b border-[#484848] uppercase pb-2">
-            project info
-          </h3>
-          <div className="text-[#C7C7C7] flex flex-row justify-between border-b border-[#484848] pb-2">
-            <span>Year</span>
-            <span>2023</span>
-          </div>
-          <div className="text-[#C7C7C7] flex flex-row justify-between border-b border-[#484848] pb-2">
-            <span>Role</span>
-            <span>Front-end Developer</span>
-          </div>
+              <h3 className="border-b border-[#484848] uppercase pb-2">
+                project info
+              </h3>
+              <div className="text-[#C7C7C7] flex flex-row justify-between border-b border-[#484848] pb-2">
+                <span>Year</span>
+                <span>{data.year}</span>
+              </div>
+              <div className="text-[#C7C7C7] flex flex-row justify-between border-b border-[#484848] pb-2">
+                <span>Role</span>
+                <span>{data.role}</span>
+              </div>
 
-          {/* Links */}
-          <div className="text-[#D3E97A] flex flex-row gap-6 mt-2">
-            <a
-              href=""
-              className="flex flex-row gap-1 items-center uppercase border-b hover:opacity-80 transition"
-            >
-              Live Demo <FiArrowUpRight />
-            </a>
-            <a
-              href=""
-              className="flex flex-row gap-1 items-center uppercase border-b hover:opacity-80 transition"
-            >
-              See on GitHub <FaGithub />
-            </a>
+              {/* Links */}
+              <div className="text-[#D3E97A] flex flex-row gap-6 mt-2">
+                <a
+                  href={data.demo}
+                  className="flex flex-row gap-1 items-center uppercase border-b hover:opacity-80 transition text-sm"
+                  target="_blank"
+                >
+                  Live Demo <FiArrowUpRight />
+                </a>
+                <a
+                  href={data.github}
+                  className="flex flex-row gap-1 items-center uppercase border-b hover:opacity-80 transition text-sm"
+                  target="_blank"
+                >
+                  See on GitHub <FaGithub />
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </main>
   );
