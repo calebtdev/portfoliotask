@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col md:grid md:grid-cols-2 items-center gap-8 py-12 px-6 md:px-12 overflow-hidden">
+    <section className="flex flex-col md:grid md:grid-cols-2 items-center gap-8 py-12 px-6 md:px-12 pt-[7rem] md:pt-[10rem] overflow-hidden">
       {/* LEFT CONTENT */}
       <div className="flex flex-col gap-4 text-left">
         <h1 className="uppercase font-bold text-3xl md:text-4xl leading-snug">

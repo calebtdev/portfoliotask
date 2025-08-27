@@ -10,7 +10,7 @@ import Contact from "../components/Contact";
 const Home = () => {
   return (
     // Container for the whole page, centered with a max width
-    <main className="max-w-[1400px] mx-auto">
+    <main className="max-w-[1400px] mx-auto relative">
       {/* Top navigation bar */}
       <Header />
 

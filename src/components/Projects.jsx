@@ -6,7 +6,7 @@ import { projectData } from "../data/datarecord";
 
 const Projects = () => {
   return (
-    <main className="px-6 md:px-12 overflow-hidden" id="#project">
+    <main className="px-6 md:px-12 overflow-hidden" id="project">
       {/* Section Heading */}
       <div className="flex flex-col md:grid md:grid-cols-2 pb-8 gap-6">
         <div>

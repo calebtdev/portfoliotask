@@ -14,7 +14,7 @@ const About = () => {
       <Header />
 
       {/* About intro section */}
-      <section className="flex flex-col md:grid grid-cols-2 gap-8  px-6 md:px-30 pt-[2rem] md:pt-[5rem]">
+      <section className="flex flex-col md:grid grid-cols-2 gap-8  px-6 md:px-30 pt-[7rem] md:pt-[12rem]">
         {/* Left column: About page title */}
         <div className="flex flex-col ">
           <h1 className="text-4xl font-bold">ABOUT ME</h1>

@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     // Header container with padding, flex layout, and text styling
-    <header className="relative py-6 flex flex-row text-[#C7C7C7] items-center justify-between px-6 md:px-12">
+    <header className="fixed top-0 left-0 w-full z-50 bg-black py-6 flex flex-row text-[#C7C7C7] items-center justify-between px-6 md:px-12 shadow-md">
       {/* Logo / Name linking back to homepage */}
       <a className="uppercase font-bold text-xl md:text-2xl" href="/">
         caleb adebayo
@@ -38,7 +38,7 @@ const Header = () => {
       {/* Mobile menu (visible only when menuButton is true) */}
       {menuButton && (
         <div className="absolute md:hidden w-full left-0 flex flex-col justify-center items-center mt-[13rem] gap-[2rem] mx-auto bg-black py-5">
-          <a href="#project">Work</a>
+          <a href="/#project">Work</a>
           <a href="/about">About</a>
           <a href="#contact">Contact</a>
         </div>
