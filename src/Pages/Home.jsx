@@ -7,7 +7,7 @@ import Contact from "../components/Contact";
 
 const Home = () => {
   return (
-    <main className="max-w-[1400px] mx-auto ">
+    <main className="max-w-[1400px] mx-auto">
       <Header />
       <Hero />
       <hr className="text-gray-600 py-3" />

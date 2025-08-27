@@ -1,22 +1,34 @@
 import React from "react";
-import Header from "../components/Header";
-import heroImg from "../assets/aboutme.png";
-import { FaGithub } from "react-icons/fa";
-import Contact from "../components/Contact";
+import Header from "../components/Header"; // Site header with navigation
+import heroImg from "../assets/aboutme.png"; // About page hero image
+import { FaGithub } from "react-icons/fa"; // GitHub icon
+import Contact from "../components/Contact"; // Contact section
+import Capabilities from "../components/Capabilities"; // Capabilities/skills section
+import Experience from "../components/Experience"; // Work experience section
 
 const About = () => {
   return (
+    // Main container with a max width for large screens and centered content
     <main className="max-w-[1400px] mx-auto ">
+      {/* Top header/navigation bar */}
       <Header />
-      <section className="grid grid-cols-2 gap-8  px-6 md:px-24 pt-[5rem]">
+
+      {/* About intro section */}
+      <section className="flex flex-col md:grid grid-cols-2 gap-8  px-6 md:px-30 pt-[2rem] md:pt-[5rem]">
+        {/* Left column: About page title */}
         <div className="flex flex-col ">
           <h1 className="text-4xl font-bold">ABOUT ME</h1>
         </div>
+
+        {/* Right column: About description + action buttons */}
         <div className="flex flex-col gap-3">
+          {/* Short professional summary */}
           <h3 className="text-xl">
             I’m a Full-Stack Developer in Vancouver, Canada, focused on creating
             scalable web applications with React, Next.js, Node.js, and MongoDB.
           </h3>
+
+          {/* Extended background and experience */}
           <h5 className="text-[#C7C7C7]">
             I’m a Full-Stack Developer in Vancouver, Canada, focused on creating
             scalable web applications with React, Next.js, Node.js, and MongoDB.
@@ -24,32 +36,51 @@ const About = () => {
             me to bridge design and functionality, ensuring seamless user
             experiences and reliable system performance.
           </h5>
+
+          {/* Action buttons (resume, LinkedIn, GitHub) */}
           <div>
-            <div>
-              <div className="flex md:justify-start items-center gap-4 mt-6">
-                <button className="flex items-center gap-2 text-black bg-[#D3E97A] py-2 px-6 text-base md:text-lg rounded-full font-medium hover:opacity-90 transition">
-                  Download Resume <span className="font-bold text-2xl">•</span>
-                </button>
+            <div className="flex md:justify-start items-center gap-4 mt-6">
+              {/* Resume download button */}
+              <button className="flex items-center gap-2 text-black bg-[#D3E97A] py-2 px-6 text-base md:text-lg rounded-full font-medium hover:opacity-90 transition">
+                Download Resume <span className="font-bold text-2xl">•</span>
+              </button>
 
-                <button className="bg-[#222222] text-[#D3E97A] h-10 w-10 flex items-center justify-center rounded-full hover:bg-black transition">
-                  in
-                </button>
+              {/* LinkedIn button (placeholder "in" for now) */}
+              <button className="bg-[#222222] text-[#D3E97A] h-10 w-10 flex items-center justify-center rounded-full hover:bg-black transition">
+                in
+              </button>
 
-                <button className="bg-[#222222] text-[#D3E97A] h-10 w-10 flex items-center justify-center rounded-full hover:bg-black transition">
-                  <FaGithub size={20} />
-                </button>
-              </div>
+              {/* GitHub button with icon */}
+              <button className="bg-[#222222] text-[#D3E97A] h-10 w-10 flex items-center justify-center rounded-full hover:bg-black transition">
+                <FaGithub size={20} />
+              </button>
             </div>
           </div>
         </div>
       </section>
-      <div className="flex items-center justify-center px-6 md:px-24  py-[5rem]">
+
+      {/* Hero image section */}
+      <div className="flex items-center justify-center px-6 md:px-30 py-[5rem]">
         <img
           src={heroImg}
           alt="Hero"
-          className="rounded-2xl shadow-lg w-full max-h-[35rem] object-center"
+          className="rounded-2xl shadow-lg w-full max-h-[40rem] object-center"
         />
       </div>
+
+      {/* Capabilities/skills section */}
+      <Capabilities />
+
+      {/* Divider line */}
+      <hr className="text-gray-600 my-[2rem] md:my-[3rem]" />
+
+      {/* Work experience section */}
+      <Experience />
+
+      {/* Divider line */}
+      <hr className="text-gray-600 my-[2rem] md:my-[3rem]" />
+
+      {/* Contact section */}
       <Contact />
     </main>
   );
