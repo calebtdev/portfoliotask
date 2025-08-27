@@ -20,7 +20,7 @@ const Header = () => {
 
       {/* Desktop navigation links (hidden on small screens) */}
       <div className="hidden md:flex flex-row items-center gap-[5rem]">
-        <a href="#project">Work</a>
+        <a href="/#project">Work</a>
         <a href="/about">About</a>
         <a href="#contact">Contact</a>
       </div>
