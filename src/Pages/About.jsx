@@ -56,7 +56,7 @@ const About = () => {
 
               {/* LinkedIn button (placeholder "in" for now) */}
               <a
-                className="bg-[#222222] text-[#D3E97A] h-10 w-10 flex items-center justify-center rounded-full hover:bg-black transition"
+                className="bg-[#222222] text-[#D3E97A] h-10 w-10 flex items-center  justify-center rounded-full hover:bg-black transition"
                 href="https://www.linkedin.com/in/calebtol/"
                 target="_blank"
               >
