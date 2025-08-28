@@ -19,9 +19,12 @@ const Hero = () => {
 
         {/* ACTION BUTTONS */}
         <div className="flex md:justify-start items-center gap-4 mt-6">
-          <button className="flex items-center gap-2 text-black bg-[#D3E97A] py-2 px-6 text-base md:text-lg rounded-full font-medium hover:opacity-90 transition">
+          <a
+            className="flex items-center gap-2 text-black bg-[#D3E97A] py-2 px-6 text-base md:text-lg rounded-full font-medium hover:opacity-90 transition"
+            href="#contact"
+          >
             Contact Me <span>•</span>
-          </button>
+          </a>
 
           <button className="bg-[#222222] text-[#D3E97A] h-10 w-10 flex items-center justify-center rounded-full hover:bg-black transition">
             in

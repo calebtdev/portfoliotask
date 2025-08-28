@@ -31,7 +31,7 @@ const About = () => {
 
         {/* Link to learn more about you */}
         <div className="text-[#D3E97A] pb-[2rem] md:pb-[10rem]">
-          <a href="" className="border-b pb-1">
+          <a href="/about" className="border-b pb-1">
             MORE ABOUT ME
           </a>
         </div>

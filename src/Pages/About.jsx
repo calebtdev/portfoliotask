@@ -1,10 +1,12 @@
 import React from "react";
 import Header from "../components/Header"; // Site header with navigation
-import heroImg from "../assets/aboutme.png"; // About page hero image
+import heroImg from "../assets/aboutme.jpg"; // About page hero image
 import { FaGithub } from "react-icons/fa"; // GitHub icon
 import Contact from "../components/Contact"; // Contact section
 import Capabilities from "../components/Capabilities"; // Capabilities/skills section
 import Experience from "../components/Experience"; // Work experience section
+import { FiDownload } from "react-icons/fi"; // Feather icon
+import resume from "../assets/resume.pdf";
 
 const About = () => {
   return (
@@ -41,19 +43,34 @@ const About = () => {
           <div>
             <div className="flex md:justify-start items-center gap-4 mt-6">
               {/* Resume download button */}
-              <button className="flex items-center gap-2 text-black bg-[#D3E97A] py-2 px-6 text-base md:text-lg rounded-full font-medium hover:opacity-90 transition">
-                Download Resume <span className="font-bold text-2xl">•</span>
-              </button>
+              <a
+                className="flex items-center gap-2 text-black bg-[#D3E97A] py-2 px-6 text-base md:text-lg rounded-full font-medium hover:opacity-90 transition"
+                href={resume}
+                download="Caleb_Adebayo.pdf"
+              >
+                Download Resume{" "}
+                <span className="font-bold text-2xl">
+                  <FiDownload size={20} />
+                </span>
+              </a>
 
               {/* LinkedIn button (placeholder "in" for now) */}
-              <button className="bg-[#222222] text-[#D3E97A] h-10 w-10 flex items-center justify-center rounded-full hover:bg-black transition">
+              <a
+                className="bg-[#222222] text-[#D3E97A] h-10 w-10 flex items-center justify-center rounded-full hover:bg-black transition"
+                href="https://www.linkedin.com/in/calebtol/"
+                target="_blank"
+              >
                 in
-              </button>
+              </a>
 
               {/* GitHub button with icon */}
-              <button className="bg-[#222222] text-[#D3E97A] h-10 w-10 flex items-center justify-center rounded-full hover:bg-black transition">
+              <a
+                className="bg-[#222222] text-[#D3E97A] h-10 w-10 flex items-center justify-center rounded-full hover:bg-black transition"
+                target="_blank"
+                href="https://github.com/calebtolorunleke"
+              >
                 <FaGithub size={20} />
-              </button>
+              </a>
             </div>
           </div>
         </div>
