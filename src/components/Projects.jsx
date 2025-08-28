@@ -23,7 +23,10 @@ const Projects = () => {
       {/* Project Grid */}
       <div className="flex flex-col gap-[5rem]">
         {projectData.map((data, index) => (
-          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 items-center">
+          <div
+            className="flex flex-col md:grid md:grid-cols-2 gap-8 items-center"
+            key={index}
+          >
             {/* LEFT: Image card */}
             <div className="flex flex-col gap-4 p-4 bg-[#1A1A1A] items-center rounded-xl w-full">
               <div className="self-start">
