@@ -1,6 +1,7 @@
-import betahouse from "../assets/projImg/betahouse.jpg"
-import urlshortner from "../assets/projImg/urlshortner.png"
-import transita from "../assets/projImg/transita.png"
+// import betahouse from "../assets/projImg/betahouse.jpg"
+// import urlshortner from "../assets/projImg/urlshortner.png"
+// import transita from "../assets/projImg/transita.png"
+import grafana_dashboard from "../assets/grafana.jpg"
 
 
 // export const projectData = [{
@@ -41,7 +42,7 @@ export const projectData = [
         type: "Professional Project",
         year: "2025",
         role: "Application Support Engineer / SRE",
-        // img: grafana_dashboard,
+        img: grafana_dashboard,
         demo: null,
         github: null
     }, {
