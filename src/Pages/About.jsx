@@ -25,19 +25,20 @@ const About = () => {
         {/* Right column: About description + action buttons */}
         <div className="flex flex-col gap-3">
           {/* Short professional summary */}
-          <h3 className="text-xl">
-            I’m a Full-Stack Developer in Vancouver, Canada, focused on creating
-            scalable web applications with React, Next.js, Node.js, and MongoDB.
+          <h3 className="text-xl font-semibold">
+            I am an Application Support Engineer and Site Reliability Engineer
+            with experience supporting enterprise-level applications and
+            infrastructure.
           </h3>
 
-          {/* Extended background and experience */}
-          <h5 className="text-[#C7C7C7]">
-            I’m a Full-Stack Developer in Vancouver, Canada, focused on creating
-            scalable web applications with React, Next.js, Node.js, and MongoDB.
-            My background in frontend engineering and backend development allows
-            me to bridge design and functionality, ensuring seamless user
-            experiences and reliable system performance.
-          </h5>
+          <p className="text-[#C7C7C7] mt-2">
+            My expertise spans incident management, performance monitoring, root
+            cause analysis, and automation. I have worked extensively with tools
+            like Dynatrace, Grafana, AWS CloudWatch, and CI/CD pipelines to
+            ensure system reliability and scalability. Passionate about
+            optimizing uptime and reducing operational overhead, I thrive at the
+            intersection of software, systems, and support.
+          </p>
 
           {/* Action buttons (resume, LinkedIn, GitHub) */}
           <div>

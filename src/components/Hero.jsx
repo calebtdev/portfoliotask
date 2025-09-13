@@ -1,6 +1,7 @@
 import React from "react";
 import heroImg from "../assets/logo.jpg";
 import { FaGithub } from "react-icons/fa";
+import resume from "../assets/resume.pdf";
 
 const Hero = () => {
   return (
@@ -10,13 +11,14 @@ const Hero = () => {
         <h1 className="uppercase font-bold text-3xl md:text-4xl leading-snug">
           hi, i am <span className="block text-[#D3E97A]">caleb adebayo.</span>
         </h1>
-
         <p className="text-gray-400 text-base md:text-lg leading-relaxed">
-          A Full-Stack Developer skilled in React, Node.js, Express, and
-          MongoDB, I build scalable web applications with clean, efficient code
-          and modern UI design.
+          Application Support Engineer and Site Reliability Engineer with over
+          five years of experience in incident management, performance
+          monitoring, root cause analysis, and automation. Skilled in using
+          tools like Dynatrace, Grafana, AWS CloudWatch, Azure, and CI/CD
+          pipelines to ensure system reliability and scalability. Passionate
+          about optimizing uptime and reducing operational overhead.
         </p>
-
         {/* ACTION BUTTONS */}
         <div className="flex md:justify-start items-center gap-4 mt-6">
           <a
@@ -26,13 +28,21 @@ const Hero = () => {
             Contact Me <span>•</span>
           </a>
 
-          <button className="bg-[#222222] text-[#D3E97A] h-10 w-10 flex items-center justify-center rounded-full hover:bg-black transition">
+          <a
+            className="bg-[#222222] text-[#D3E97A] h-10 w-10 flex items-center justify-center rounded-full cursor-pointer hover:bg-black transition"
+            href="https://www.linkedin.com/in/calebtol/"
+            target="_blank"
+          >
             in
-          </button>
+          </a>
 
-          <button className="bg-[#222222] text-[#D3E97A] h-10 w-10 flex items-center justify-center rounded-full hover:bg-black transition">
-            <FaGithub size={20} />
-          </button>
+          <a
+            href={resume}
+            download="Caleb_Adebayo.pdf"
+            className="bg-[#222222] text-[#D3E97A] h-10 w-10 flex items-center justify-center rounded-full hover:bg-black transition"
+          >
+            <span className="text-sm font-bold">CV</span>
+          </a>
         </div>
       </div>
 
