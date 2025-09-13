@@ -9,13 +9,14 @@ const Projects = () => {
     <main className="px-6 md:px-12 overflow-hidden" id="project">
       {/* Section Heading */}
       <div className="flex flex-col md:grid md:grid-cols-2 pb-8 gap-6">
-        <div>
+        <div className="flex flex-col gap-3">
           <h1 className="text-2xl md:text-3xl uppercase font-bold">
             featured projects
           </h1>
           <h4 className="text-gray-400">
-            Here are some of the selected projects that showcase my passion for
-            front-end development
+            Here are some selected projects that demonstrate my expertise and
+            passion for Application Support and Site Reliability Engineering
+            (SRE).
           </h4>
         </div>
       </div>
