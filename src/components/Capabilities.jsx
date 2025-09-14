@@ -3,27 +3,51 @@ import React from "react";
 const Capabilities = () => {
   // Array of skills to display as badges
   const skills = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React.js",
-    "Next.js",
-    "Tailwind CSS",
-    "RESTful APIs",
-    "GraphQL",
-    "JWT",
-    "OAuth",
-    "Node.js",
-    "Express",
-    "MongoDB",
-    "SQL",
-    "GitHub Actions",
-    "Docker",
-    "Cloud Platforms",
+    // Monitoring & Observability
+    "Grafana",
+    "Prometheus",
+    "ELK Stack (Elasticsearch, Logstash, Kibana)",
+    "Dynatrace",
+    "ServiceNow",
+    "Alerting & Incident Management",
+
+    // Cloud & Infrastructure
+    "AWS",
+    "Azure",
+    "High Availability Architecture",
+    "Load Balancing",
+    "Disaster Recovery",
+    "Cloud Infrastructure Monitoring",
+
+    // Scripting & Automation
+    "Python",
+    "Bash Scripting",
+    "Automation Workflows",
+    "Incident Response Automation",
     "CI/CD Pipelines",
-    "Clean Code",
-    "Automated Testing",
+    "GitHub Actions",
+    "Jenkins",
+
+    // Databases
+    "SQL",
+    "MongoDB",
+    "Database Performance Tuning",
+    "Database Health Monitoring",
+
+    // DevOps & Reliability
+    "Docker",
+    "Kubernetes",
+    "Infrastructure as Code (IaC)",
+    "System Reliability Engineering",
+    "Root Cause Analysis",
+    "Performance Optimization",
+
+    // Collaboration & Processes
     "Agile Collaboration",
+    "Cross-Team Communication",
+    "Change Management",
+    "Problem Management",
+    "Continuous Improvement",
   ];
 
   return (
@@ -40,15 +64,16 @@ const Capabilities = () => {
       <div className="flex flex-col gap-[1rem]">
         {/* Paragraph describing my capabilities */}
         <p className="text-[#C7C7C7]">
-          I specialize in building modern, responsive, and user-friendly web
-          applications, while also designing and developing robust RESTful and
-          GraphQL APIs that enable seamless communication between front-end
-          interfaces and back-end services. I implement secure authentication
-          and authorization workflows with role-based access control, and I
-          consistently apply best practices in clean code, automated testing,
-          and Agile collaboration to improve code quality, enhance teamwork, and
-          deliver software solutions that align with both technical requirements
-          and business objectives.
+          I specialize in ensuring the stability, performance, and reliability
+          of complex systems and applications. My expertise includes proactive
+          monitoring, incident response, and root cause analysis to minimize
+          downtime and improve service availability. I work with tools like
+          Grafana, ELK Stack, Dynatrace, and ServiceNow to streamline alerting
+          and automate workflows. By collaborating closely with engineering,
+          DevOps, and product teams, I help optimize deployments, enhance CI/CD
+          processes, and implement high availability strategies. My focus is on
+          operational excellence, continuous improvement, and delivering
+          seamless, reliable experiences for end users and stakeholders.
         </p>
 
         {/* Skills section - maps through the array and renders a styled badge for each */}

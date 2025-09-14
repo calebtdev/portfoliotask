@@ -65,13 +65,13 @@ const About = () => {
               </a>
 
               {/* GitHub button with icon */}
-              <a
+              {/* <a
                 className="bg-[#222222] text-[#D3E97A] h-10 w-10 flex items-center justify-center rounded-full hover:bg-black transition"
                 target="_blank"
                 href="https://github.com/calebtolorunleke"
               >
                 <FaGithub size={20} />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
