@@ -2,6 +2,13 @@
 // import urlshortner from "../assets/projImg/urlshortner.png"
 // import transita from "../assets/projImg/transita.png"
 import grafana_dashboard from "../assets/grafana.jpg"
+import sql_performance from "../assets/sql_performance.avif"
+import db_health_check from "../assets/db_health_check.png"
+import grafana_cloud from "../assets/grafana_cloud.png"
+import incident_bot from "../assets/dynserv.jpg"
+import cicd_tracker from "../assets/cicd_tracker.png"
+import datadog from "../assets/datadog.jpeg"
+import failover from "../assets/failover.webp"
 
 
 // export const projectData = [{
@@ -35,65 +42,83 @@ import grafana_dashboard from "../assets/grafana.jpg"
 
 
 
-export const projectData = [
-    {
-        title: "Enterprise Infrastructure Monitoring Dashboard",
-        detail: "Designed and implemented a centralized monitoring solution to proactively track server health, application performance, and critical alerts across multiple environments. Improved incident response times by 30% through real-time metrics and automated alerting.",
-        type: "Professional Project",
-        year: "2025",
-        role: "Application Support Engineer / SRE",
-        img: grafana_dashboard,
-        demo: null,
-        github: null
-    }, {
-        title: "Cloud Infrastructure Monitoring System",
-        detail: "Implemented a comprehensive monitoring solution using Grafana and Prometheus to track real-time performance metrics across AWS and Azure environments. Reduced downtime by 25% through proactive alerting and automated scaling policies.",
-        type: "Professional Project",
-        year: "2025",
-        role: "Application Support Engineer / SRE",
-        // img: grafana_dashboard,
-        demo: null,
-        github: null
-    },
-    {
-        title: "Automated Incident Response Bot",
-        detail: "Developed a Slack-integrated bot to automate incident triage and resolution steps. Integrated with Dynatrace and ServiceNow to automatically create, assign, and update tickets, reducing MTTR (Mean Time to Resolution) by 40%.",
-        type: "Professional Project",
-        year: "2025",
-        role: "Application Support Engineer / SRE",
-        // img: incident_bot,
-        demo: null,
-        github: null
-    }
-    , {
-        title: "CI/CD Deployment Reliability Tracker",
-        detail: "Built a pipeline health tracker integrated with Jenkins and GitHub Actions to monitor build failures, deployment frequency, and rollback events. Enabled teams to identify failure patterns and improved deployment success rate by 35%.",
-        type: "Internal Tool",
-        year: "2025",
-        role: "Application Support Engineer / SRE",
-        // img: cicd_tracker,
-        demo: null,
-        github: null
-    }
-    , {
-        title: "Real-Time Log Aggregation & Alerting System",
-        detail: "Designed a centralized logging solution using ELK Stack (Elasticsearch, Logstash, Kibana) to collect and analyze application logs across distributed systems. Enabled proactive issue detection and improved root cause analysis speed by 50%.",
-        type: "Professional Project",
-        year: "2025",
-        role: "Application Support Engineer / SRE",
-        // img: elk_stack,
-        demo: null,
-        github: null
-    }
-    , {
-        title: "High Availability and Failover Architecture",
-        detail: "Architected and deployed a multi-region failover system on AWS using Route 53 and Elastic Load Balancers. Ensured 99.99% uptime for mission-critical services and reduced unplanned outages by 60%.",
-        type: "Professional Project",
-        year: "2025",
-        role: "Application Support Engineer / SRE",
-        // img: aws_failover,
-        demo: null,
-        github: null
-    }
+export const projectData = [{
+    title: "Alert Workflow Optimization",
+    detail: "Streamlined alert management by refining thresholds and integrating Grafana monitoring tool. Reduced false positives by 25% and enabled teams to focus on high-priority incidents, improving operational efficiency.",
+    type: "Professional Project",
+    category: "Monitoring & Alerting",
+    role: "SRE / Application Support",
+    img: grafana_dashboard,
+    demo: null,
+    github: null
+},
+{
+    title: "SQL Query Performance Tuning",
+    detail: "Analyzed and optimized slow-running SQL queries impacting application performance. Used indexing, query refactoring, and execution plan analysis to reduce query response time by 40%. Collaborated with developers to implement best practices for database efficiency.",
+    type: "Professional Project",
+    category: "Database Optimization",
+    role: "Application Support Engineer",
+    img: sql_performance,
+    demo: null,
+    github: null
+},
+{
+    title: "Automated Database Health Monitoring",
+    detail: "Developed SQL stored procedures and scripts to automatically monitor database health metrics, including space utilization, index fragmentation, and query bottlenecks. Configured alerts to proactively notify the team before incidents occurred, reducing downtime by 20%.",
+    type: "Professional Project",
+    category: "Database Monitoring",
+    role: "Application Support Engineer / SRE",
+    img: db_health_check,
+    demo: null,
+    github: null
+},
+{
+    title: "Cloud Infrastructure Monitoring System",
+    detail: "Implemented a comprehensive monitoring solution using Grafana and Prometheus to track real-time performance metrics across AWS and Azure environments. Reduced downtime by 25% through proactive alerting and automated scaling policies.",
+    type: "Professional Project",
+    category: "Cloud Infrastructure",
+    role: "Application Support Engineer / SRE",
+    img: grafana_cloud,
+    demo: null,
+    github: null
+},
+{
+    title: "Automated Incident Response Bot",
+    detail: "Developed a Slack-integrated bot to automate incident triage and resolution steps. Integrated with Dynatrace and ServiceNow to automatically create, assign, and update tickets, reducing MTTR (Mean Time to Resolution) by 40%.",
+    type: "Professional Project",
+    category: "Incident Automation",
+    role: "Application Support Engineer / SRE",
+    img: incident_bot,
+    demo: null,
+    github: null
+},
+{
+    title: "CI/CD Deployment Reliability Tracker",
+    detail: "Built a pipeline health tracker integrated with Jenkins and GitHub Actions to monitor build failures, deployment frequency, and rollback events. Enabled teams to identify failure patterns and improved deployment success rate by 35%.",
+    type: "Internal Tool",
+    category: "DevOps & CI/CD",
+    role: "Application Support Engineer / SRE",
+    img: cicd_tracker,
+    demo: null,
+    github: null
+},
+{
+    title: "Real-Time Log Aggregation & Alerting System",
+    detail: "Designed a centralized logging solution using ELK Stack (Elasticsearch, Logstash, Kibana) to collect and analyze application logs across distributed systems. Enabled proactive issue detection and improved root cause analysis speed by 50%.",
+    type: "Professional Project",
+    category: "Log Management",
+    role: "Application Support Engineer / SRE",
+    img: datadog,
+    demo: null,
+    github: null
+},
+{
+    title: "High Availability and Failover Architecture",
+    detail: "Architected and deployed a multi-region failover system on AWS using Route 53 and Elastic Load Balancers. Ensured 99.99% uptime for mission-critical services and reduced unplanned outages by 60%.",
+    type: "Professional Project",
+    category: "High Availability",
+    role: "Application Support Engineer / SRE",
+    img: failover, stakeholders: ["SRE Team, ", "DevOps, ", "Engineering"],
 
-]
+    github: null
+}]
