@@ -4,25 +4,32 @@ const Experience = () => {
   // Array of experiences containing job role, date, company name, and details
   const experiences = [
     {
-      role: "Intern Full-Stack Developer",
-      date: "Aug 2025 - Present",
-      companyname: "TechNova Solutions",
+      role: "Application Support Engineer | Unit Head ",
+      date: "Oct 2022 – Jul 2025",
+      companyname: "Guaranty Trust Bank (GTCO)",
       detail:
-        "Contributed to the development of a scalable web application by building REST APIs, integrating frontend components with backend services, and assisting in database design. Collaborated in daily standups and gained hands-on experience with agile workflows.",
+        "Led a team of 3 support engineers, delivering L2/L3 support for critical banking systems (Internet Banking, USSD, APIs) with 99.9% uptime for 3M+ daily users. Improved incident response and monitoring, cutting P1 incidents by 30% and MTTR by 20%. Optimized infrastructure and automated workflows using Python, PowerShell, and Grafana, reducing manual toil by 35% and downtime by 35%. Developed SOPs and dashboards to streamline onboarding and mentored junior engineers on root cause analysis and escalation best practices.",
     },
     {
-      role: "Intern Frontend Developer",
-      date: "May 2025 - Jul 2025",
-      companyname: "PixelCraft Labs",
+      role: "Solution Engineer / L2 Support Engineer ",
+      date: "Apr 2021 – Oct 2022",
+      companyname: "dipoleDiamond Ltd (FinTech) ",
       detail:
-        "Assisted in creating responsive and interactive UI components using React and Tailwind CSS. Optimized web performance, implemented reusable components, and worked closely with designers to translate Figma wireframes into functional interfaces.",
+        "Delivered L2 support and troubleshooting for RPA and enterprise solutions, ensuring 99% uptime. Built automation workflows with UiPath, ProcessMaker, and Power Automate, cutting manual effort by 40%, and developed automated tests to reduce post-release defects by 20%. Optimized SQL/NoSQL databases for 15% faster queries and managed SharePoint administration and training, increasing user adoption by 30%.",
     },
     {
-      role: "Software Support Intern",
-      date: "Jan 2025 - Apr 2025",
-      companyname: "CloudWare Systems",
+      role: "SRE / L2 Support Engineer ",
+      date: "Jun 2020 – Apr 2021",
+      companyname: "United Bank for Africa (UBA)",
       detail:
-        "Provided application support for internal tools, triaged bugs, and implemented small fixes using JavaScript and Node.js. Monitored logs and system performance, gaining practical knowledge of DevOps workflows and CI/CD pipelines.",
+        "Monitored enterprise applications across 19 countries using Dynatrace, SolarWinds, and CloudWatch, reducing downtime by 25%. Strengthened compliance and device security by 40% through Azure AD policies and Intune. Automated server and endpoint tasks with Shell and PowerShell, cutting manual effort by 30%. Provided L3 support for financial applications, resolving 95% of incidents within SLA.",
+    },
+    {
+      role: "Application Support Analyst  ",
+      date: "Jun 2020 – Apr 2021",
+      companyname: "Opay Tech Solutions",
+      detail:
+        "Delivered L2 support for custom ERP and CRM systems across 15+ client organizations, handling incident triage and escalation while consistently meeting SLA targets. Supported automated deployment pipelines using Jenkins to streamline release management. Provided 24/7 on-call support, resolving an average of 300+ tickets per month.",
     },
   ];
 
