@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header"; // Site header with navigation
-import heroImg from "../assets/aboutme.jpg"; // About page hero image
+import heroImg from "../assets/aboutme.jpeg"; // About page hero image
 import { FaGithub } from "react-icons/fa"; // GitHub icon
 import Contact from "../components/Contact"; // Contact section
 import Capabilities from "../components/Capabilities"; // Capabilities/skills section

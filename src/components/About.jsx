@@ -15,18 +15,19 @@ const About = () => {
       <div className="flex flex-col gap-3">
         {/* Subheading (only visible on medium+ screens) */}
         <h1 className="text-lg hidden md:block">
-          I am a Full-Stack Developer with a strong background in frontend
-          development, application support, and automation
+          I am an Application Support Engineer and Site Reliability Engineer
+          with experience supporting enterprise-level applications and
+          infrastructure.
         </h1>
 
         {/* About description paragraph */}
         <h3 className="text-[#C7C7C7]">
-          I am a passionate Full-Stack Developer with a strong background in
-          frontend development, application support, and automation. I enjoy
-          building modern, responsive, and scalable web applications that
-          deliver seamless user experiences. With hands-on experience in
-          React.js, Node.js, Express, MongoDB, and Tailwind CSS, I thrive at the
-          intersection of clean design and efficient code.
+          My expertise spans incident management, performance monitoring, root
+          cause analysis, and automation. I have worked extensively with tools
+          like Dynatrace, Grafana, AWS CloudWatch, and CI/CD pipelines to ensure
+          system reliability and scalability. Passionate about optimizing uptime
+          and reducing operational overhead, I thrive at the intersection of
+          software, systems, and support.
         </h3>
 
         {/* Link to learn more about you */}
