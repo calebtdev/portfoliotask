@@ -40,7 +40,11 @@ const Contact = () => {
             </p>
             <span>
               For more info here's my{" "}
-              <a href={resume} className="border-b border-[#D3E97A]">
+              <a
+                href={resume}
+                className="border-b border-[#D3E97A]"
+                target="_blank"
+              >
                 resume
               </a>
             </span>
