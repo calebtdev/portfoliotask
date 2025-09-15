@@ -48,7 +48,7 @@ const Contact = () => {
 
           {/* Social media icons */}
           <div className="flex flex-row gap-[1rem]">
-            <a href="">
+            <a href="https://www.linkedin.com/in/calebtol/">
               <FaLinkedin className="text-[#D3E97A]" />
             </a>
             <a href="">
@@ -66,7 +66,7 @@ const Contact = () => {
         {/* Footer copyright (visible only on medium+ screens) */}
         <div className="hidden md:flex gap-[2px] items-center text-[#C7C7C7]">
           <FaRegCopyright />
-          <span>2025</span>
+          <span className="text-[#D3E97A]">2025</span>
           <span>Caleb Adebayo</span>
         </div>
       </div>
