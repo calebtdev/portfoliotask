@@ -10,6 +10,7 @@ const Capabilities = () => {
     "Dynatrace",
     "ServiceNow",
     "Alerting & Incident Management",
+    "Application IT360",
 
     // Cloud & Infrastructure
     "AWS",
