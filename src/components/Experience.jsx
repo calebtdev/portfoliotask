@@ -13,14 +13,14 @@ const Experience = () => {
     {
       role: "Solution Engineer / L2 Support Engineer ",
       date: "Apr 2021 – Oct 2022",
-      companyname: "dipoleDiamond Ltd (FinTech) || Nigeria",
+      companyname: "dipoleDiamond Ltd (FinTech) || Lagos,Nigeria",
       detail:
         "Delivered L2 support and troubleshooting for RPA and enterprise solutions, ensuring 99% uptime. Built automation workflows with UiPath, ProcessMaker, and Power Automate, cutting manual effort by 40%, and developed automated tests to reduce post-release defects by 20%. Optimized SQL/NoSQL databases for 15% faster queries and managed SharePoint administration and training, increasing user adoption by 30%.",
     },
     {
       role: "SRE / L2 Support Engineer ",
       date: "Jun 2020 – Apr 2021",
-      companyname: "United Bank for Africa (UBA) || Nigeria",
+      companyname: "United Bank for Africa (UBA) || Lagos,Nigeria",
       detail:
         "Monitored enterprise applications across 19 countries using Dynatrace, SolarWinds, and CloudWatch, reducing downtime by 25%. Strengthened compliance and device security by 40% through Azure AD policies and Intune. Automated server and endpoint tasks with Shell and PowerShell, cutting manual effort by 30%. Provided L3 support for financial applications, resolving 95% of incidents within SLA.",
     },
