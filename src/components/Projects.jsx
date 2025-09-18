@@ -1,7 +1,7 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
-import heroImg from "../assets/logo.jpg";
-import { FiArrowUpRight } from "react-icons/fi";
+// import { FaGithub } from "react-icons/fa";
+// import heroImg from "../assets/logo.jpg";
+// import { FiArrowUpRight } from "react-icons/fi";
 import { projectData } from "../data/datarecord";
 
 const Projects = () => {

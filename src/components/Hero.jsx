@@ -1,6 +1,6 @@
 import React from "react";
 import heroImg from "../assets/logo.jpg";
-import { FaGithub } from "react-icons/fa";
+// import { FaGithub } from "react-icons/fa";
 import resume from "../assets/resume.pdf";
 
 const Hero = () => {
